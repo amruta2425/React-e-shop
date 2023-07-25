@@ -1,0 +1,76 @@
+.userprofile__outercontainer {
+  display: flex;
+  /* flex-direction: column; */
+  margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.user__profile {
+  background-color: #ffe7a5;
+  padding: 10px;
+  border-radius: 10px;
+  width: 500px;
+}
+
+.user__profile .heading {
+  font-size: 30px;
+  color: rgb(74, 72, 72);
+  font-weight: 700;
+  border-bottom: 3px solid white;
+}
+
+.data__row {
+  display: flex;
+  flex-direction: row;
+  color: rgb(71, 66, 66);
+}
+
+.data__row span {
+  width: 50%;
+  padding: 10px;
+  border: 2px solid;
+  font-size: 18px;
+}
+
+.update__password {
+  background-color: rgb(65, 65, 65);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.update__password p {
+  font-size: 30px;
+  color: #ffbb00;
+}
+
+.update__password label {
+  color: white;
+}
+
+.update__password input {
+  border: 3px solid #ffbb00;
+  padding: 5px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.mybtn {
+  width: 100px;
+  display: block;
+  margin: auto;
+  background-color: rgb(65, 65, 65);
+  border-radius: 10px;
+  border: 2px solid white;
+  color: white;
+}
+
+.mybtn:hover {
+  color: #ffbb00;
+  border: 2px solid #ffbb00;
+  cursor: pointer;
+}/*# sourceMappingURL=UserProfile.module.css.map */
