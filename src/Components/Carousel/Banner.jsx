@@ -14,7 +14,7 @@ function getCurrentUser(){
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://bestrated.co.nz/wp-content/uploads/2021/04/Dotti-1024x450.jpg"
+                    src="https://wowslider.com/sliders/demo-76/data1/images/camera349948_1280.jpg"
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -25,7 +25,7 @@ function getCurrentUser(){
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://bestrated.co.nz/wp-content/uploads/2021/04/Dotti-1024x450.jpg"
+                    src="https://cssslider.com/sliders/demo-27/data1/images/photography603036_1280.jpg"
                     alt="Second slide"
                 />
 
@@ -34,10 +34,10 @@ function getCurrentUser(){
                     <p>The Biggest Sale</p>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            {/* <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://bestrated.co.nz/wp-content/uploads/2021/04/Dotti-1024x450.jpg"
+                    src="https://media.licdn.com/dms/image/C5616AQGWkM7VY2Ha4g/profile-displaybackgroundimage-shrink_200_800/0/1650385944121?e=2147483647&v=beta&t=zz_fQA04SfxD4SnFRB9jYg-UtR26-lxEBJPsEWpZ5iI"
                     alt="Third slide"
                 />
 
@@ -58,7 +58,7 @@ function getCurrentUser(){
                     <h3>Black Friday Sale</h3>
                     <p>All Gadgets 60% off</p>
                 </Carousel.Caption>
-            </Carousel.Item>
+            </Carousel.Item> */}
         </Carousel>
     )
 }

@@ -3,12 +3,13 @@
 }
 
 .prod__img__cont {
-  width: 2000px;
+  width: 100px;
+  height: 100px;
   margin-right: 20PX;
 }
 
 .prod__img__cont img {
-  width: 100%;
+  width: 50%;
 }
 
 .prod__data .prod__head {

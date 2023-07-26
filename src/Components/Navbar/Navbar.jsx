@@ -98,7 +98,7 @@ const Navbar = () => {
                 <a href="/product-type/mobile"><button>Mobiles</button></a>
                 <a href="/product-type/laptop"><button>Laptops</button></a>
                 <a href="/product-type/camera"><button>Cameras</button></a>
-                <a href="/product-type/shoes"><button>Shoes</button></a>
+                <a href="/product-type/TV"><button>TV</button></a>
             </div>
     </div>
     </div>

@@ -9,8 +9,8 @@ const ProductContainer = (product) => {
     let extraforfun = 10 / 100;
 
     let mrp = parseInt(p.price)
-    mrp = mrp + overalltax * mrp + overallcommission * mrp + extraforfun * mrp
-    const saleprice = mrp - extraforfun * mrp
+    mrp = Math.floor(mrp + overalltax * mrp + overallcommission * mrp + extraforfun * mrp)
+    const saleprice = Math.floor(mrp - extraforfun * mrp)
 
 
     return (
@@ -25,9 +25,9 @@ const ProductContainer = (product) => {
                 </Link> */}
 
                 <div className={styles.price__container}>
-                    <p className={styles.mrp}>MRP:</p> <p className={styles.rate}>₹{mrp}</p>
-                    <p className={styles.saleprice}>Discount Price: <p className={styles.rate}>₹{saleprice}</p></p>
-                    <p className={styles.yousave}>You Save: ₹{mrp - saleprice}</p>
+                    <p className={styles.mrp}>RRP:</p> <p className={styles.rate}>${mrp}</p>
+                    <p className={styles.saleprice}>Discount Price: <p className={styles.rate}>${saleprice}</p></p>
+                    <p className={styles.yousave}>You Save: ${mrp - saleprice}</p>
                 </div>
                 <a href={`/product/${p.producttype}/${p.id}`}><button className={styles.showmore__btn}>More Details &gt;</button></a>
                

@@ -43,9 +43,9 @@ const Home = () => {
       {/* <Products /> */}
       <div className={styles.slider__head}><p>Limited Time Deals</p></div>
       <ProductSlider type={'Mobile'} />
-      <ProductSlider type ={'Laptop'}/>
+      <ProductSlider type={'Laptop'}/>
       <ProductSlider type={'Camera'} />
-      <ProductSlider type ={'Shoes'}/>
+      <ProductSlider type ={'TV'}/>
       
        {/* <p>{loggeduser ? loggeduser[0].email : "No data"}</p> */}
     </div>

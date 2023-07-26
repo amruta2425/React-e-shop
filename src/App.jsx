@@ -28,8 +28,8 @@ function App() {
         <Route exact path="/product-type/mobile" element={<AllProducts type={'Mobile'} />} />
         <Route exact path="/product-type/laptop" element={<AllProducts type={'Laptop'} />} />
         <Route exact path="/product-type/camera" element={<AllProducts type={'Camera'} />} />
-        <Route exact path="/product-type/shoes" element={<AllProducts type={'Shoes'} />} />
-        <Route path="/product/:id/:title" element={<SpecificProductPage />} />
+        <Route exact path="/product-type/TV" element={<AllProducts type={'TV'} />} />
+        <Route path="/product/:type/:id" element={<SpecificProductPage />} />
         <Route path="*" element={<PgFOF />} />
        
 
