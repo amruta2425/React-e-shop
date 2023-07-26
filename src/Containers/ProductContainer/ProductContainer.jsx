@@ -25,7 +25,7 @@ const ProductContainer = (product) => {
                 </Link> */}
 
                 <div className={styles.price__container}>
-                    <p className={styles.mrp}>RRP:</p> <p className={styles.rate}>${mrp}</p>
+                    <p className={styles.mrp}>RRP:<p className={styles.rate}>${mrp}</p></p> 
                     <p className={styles.saleprice}>Discount Price: <p className={styles.rate}>${saleprice}</p></p>
                     <p className={styles.yousave}>You Save: ${mrp - saleprice}</p>
                 </div>

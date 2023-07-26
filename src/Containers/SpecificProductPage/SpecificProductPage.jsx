@@ -104,9 +104,9 @@ const SpecificProductPage = () => {
             <p className={styles.prod__head}>{product.producttitle}</p>
             
             <div className={styles.specific__price__container}>
-                            <p className={styles.mrp}>RRP:</p> <p className={styles.rate}>${mrp}</p>
-                            <p className={styles.saleprice}>Discount Price: </p>
-                            <p className={styles.rate}>${saleprice}</p>
+                            <p className={styles.mrp}>RRP: <p className={styles.rate}>${mrp}</p></p>
+                            <p className={styles.saleprice}>Discount Price: 
+                            <p className={styles.rate}>${saleprice}</p></p>
                             <p className={styles.yousave}>You Save: ${mrp - saleprice}</p>
                         </div>
                         <p className={styles.prod__details__head}>Details</p>

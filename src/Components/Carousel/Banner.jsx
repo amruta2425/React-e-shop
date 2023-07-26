@@ -18,8 +18,8 @@ function getCurrentUser(){
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>Buy Gadgets</h3>
-                    <p>Upto 60% off on all gadgets</p>
+                    <h3>Buy Cameras</h3>
+                    <p>Upto 10% off on all cameras</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -30,7 +30,7 @@ function getCurrentUser(){
                 />
 
                 <Carousel.Caption>
-                    <h3>Buy Apple Products</h3>
+                    <h3>Buy Gadgets</h3>
                     <p>The Biggest Sale</p>
                 </Carousel.Caption>
             </Carousel.Item>
