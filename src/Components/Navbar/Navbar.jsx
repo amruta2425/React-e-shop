@@ -5,7 +5,7 @@ import cartlogo from '../../assets/cartlogo.png'
 import profilelogo from '../../assets/profilelogo.png'
 import { auth, db } from '../../firebaseconfig/firebaseConfig'
 import { collection, getDocs, query, where } from 'firebase/firestore'
-import logoLight from '../../assets/logoLight.png';
+import logoDark from '../../assets/logoDark.png';
  
 
 const Navbar = () => {
@@ -37,10 +37,30 @@ const Navbar = () => {
 
     
     const navigate = useNavigate()
+
     const handleLogout = () => {
         auth.signOut().then(() => {
             navigate("/login")
         })
+    }
+
+    const [cartdata, setcartdata] = useState([]);
+    if (loggeduser) {
+        const getcartdata = async () => {
+            const cartArray = [];
+            const path = `cart-${loggeduser[0].uid}`
+            // console.log(path)
+            getDocs(collection(db, path)).then((querySnapshot) => {
+                querySnapshot.forEach((doc) => {
+                    // console.log(doc.id, " => ", doc.data());
+                    cartArray.push({ ...doc.data(), id: doc.id })
+                });
+                setcartdata(cartArray)
+                // console.log('done')
+            }).catch('Error error error')
+
+        }
+        getcartdata()
     }
 
 
@@ -50,7 +70,7 @@ const Navbar = () => {
     <div>
     <div className={styles.navbar}>
         <div className={styles.LeftContainer}>
-            <img src={logoLight} />
+            <img src={logoDark} />
         </div>
         <div className={styles.RightsContainer}>
         {!loggeduser && <nav>
@@ -61,7 +81,7 @@ const Navbar = () => {
 
             <div className={styles.cart__btn}>
 
-                <img src={cartlogo} alt="no img" />
+               <img src={cartlogo} alt="no img" />
                 <span className={styles.cart__icon__css}>0</span>
             </div>
 
@@ -77,8 +97,8 @@ const Navbar = () => {
             <Link to='/sellproduct'><button>Sell</button></Link>
 
             <div className={styles.cart__btn}>
-                <img src={cartlogo} alt="no img" />
-                <span className={styles.cart__icon__css}>{loggeduser[0].cart}</span>
+            <Link to='/cartdata'><img src={cartlogo} alt="no img" /></Link>
+                <button className={styles.cart__icon__css}>{cartdata.length}</button>
             </div>
 
             <Link to="/userprofile">

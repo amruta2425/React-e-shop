@@ -68,60 +68,25 @@
 }
 
 .buy__cart {
-   
     justify-content: space-between;
-}
-
-
-.warranty__replacement {
-    display: flex;
-    background-color: #ffffff;
-    padding: 10px;
-    justify-content: space-evenly;
-    width: 300px;
-    border-radius: 10px;
-    align-items: center;
-    box-shadow: 0px 0px 5px 0px grey;
-}
-
-.cod,
-.warranty,
-.replacement {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-left: 0px;
 
 }
-
-.img__circle {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 60px;
-    background-color: white;
-}
-
-.img__circle img {
-    width: 30px;
-    border-radius: 20px;
-}
-
-
-.cod,
-.warranty,
-.replacement p {
-    font-size: 13px;
-    font-weight: 600;
-    text-align: center;
-    color: #ffbb00;
-}
-
-.row__cont {
-    display: flex;
-    align-items: center;
+.btn1{
+    justify-items: center;
     justify-content: space-between;
-    width: 550PX;
+    margin-right: 20px;
+    border-radius: .3rem;
+    border-color: orange;
+    width:30%;
 }
+
+.btn2{
+    justify-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    border-radius: .3rem;
+    border-color: orange;
+    width:30%;
+}
+

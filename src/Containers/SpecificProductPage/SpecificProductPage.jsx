@@ -105,16 +105,16 @@ const SpecificProductPage = () => {
             
             <div className={styles.specific__price__container}>
                             <p className={styles.mrp}>RRP: <p className={styles.rate}>${mrp}</p></p>
-                            <p className={styles.saleprice}>Discount Price: 
-                            <p className={styles.rate}>${saleprice}</p></p>
+                            <p className={styles.saleprice}>Discount Price: </p>
+                            <p className={styles.rate}>${saleprice}</p>
                             <p className={styles.yousave}>You Save: ${mrp - saleprice}</p>
                         </div>
                         <p className={styles.prod__details__head}>Details</p>
                         <p className={styles.prod__description}>{product.description}</p>
                         
                         <div className={styles.buy__cart}>
-                                <button className={styles.btn}>Buy Now</button>
-                                <button className={styles.btn} onClick={addtocart}>Add to Cart</button>
+                                <button className={styles.btn1}>Buy Now</button>
+                                <button className={styles.btn2} onClick={addtocart}>Add to Cart</button>
                         </div>
                         
                         {successMsg && <>
