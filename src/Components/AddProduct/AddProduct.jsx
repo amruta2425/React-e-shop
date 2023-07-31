@@ -27,25 +27,27 @@ const AddProduct = () => {
     function GetCurrentUser() {
         const [user, setUser] = useState("");
         const usersCollectionRef = collection(db, "users");
-        useEffect(() => {
-            auth.onAuthStateChanged(userlogged => {
-                if (userlogged) {
-                    // console.log(userlogged.email)
-                    const getUsers = async () => {
-                        const q = query(collection(db, "users"), where("uid", "==", userlogged.uid));
-                        // console.log(q);
-                        const data = await getDocs(q);
-                        setUser(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-                    };
-                    getUsers();
-                }
-                else {
-                    setUser(null);
-                }
-            })
-        }, [])
+        
         return user
     }
+    useEffect(() => {
+        auth.onAuthStateChanged(userlogged => {
+            if (userlogged) {
+                // console.log(userlogged.email)
+                const getUsers = async () => {
+                    const q = query(collection(db, "users"), where("uid", "==", userlogged.uid));
+                    // console.log(q);
+                    const data = await getDocs(q);
+                    setUser(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+                };
+                getUsers();
+            }
+            else {
+                setUser(null);
+            }
+        })
+    }, [])
+
     const loggeduser = GetCurrentUser();
 
     const types = ['image/jpg', 'image/jpeg', 'image/png', 'image/PNG'];

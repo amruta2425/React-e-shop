@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Components/Home/Home'
 import Login from './Components/Login/Login'
 import Signup from './Components/Signup/Signup'
-import PgFOF from './Components/PgFOF/PgFOF'
+import Pg404 from './Components/Pg404/Pg404'
 import Cart from './Components/Cart/Cart'
 import UserProfile from './Components/UserProfile/UserProfile'
 import AddProduct from './Components/AddProduct/AddProduct'
@@ -25,12 +25,12 @@ function App() {
         <Route exact path="/sellproduct" element={<AddProduct/>} />
         <Route exact path="/cart" element={<Cart />} />
        
-        <Route exact path="/product-type/mobile" element={<AllProducts type={'Mobile'} />} />
-        <Route exact path="/product-type/laptop" element={<AllProducts type={'Laptop'} />} />
+      
         <Route exact path="/product-type/camera" element={<AllProducts type={'Camera'} />} />
         <Route exact path="/product-type/TV" element={<AllProducts type={'TV'} />} />
         <Route path="/product/:type/:id" element={<SpecificProductPage />} />
-        <Route path="*" element={<PgFOF />} />
+        <Route exact path ="/cartdata" element={<Cart/>}/>
+        <Route path="*" element={<Pg404 />} />
        
 
     </Routes>
