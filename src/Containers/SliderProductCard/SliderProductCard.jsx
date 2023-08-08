@@ -18,7 +18,9 @@ const Sliderproductcard = (product) => {
     return (
         <div>
             <div className={styles.mini__product__container}>
-                <div className={styles.mini__img__container}> <img src={p.prodimage}></img></div>
+                <div className={styles.mini__img__container}>
+                     <img src={p.prodimage}/>
+                     </div>
                 <div className={styles.mini__product__details}>
                     <p className={styles.mini__producttitle}>{p.producttitle}</p>
                     <div className={styles.mini__price__container}>
