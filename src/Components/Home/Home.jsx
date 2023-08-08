@@ -1,6 +1,6 @@
 import React ,{useEffect,useState}from 'react'
 import Navbar from '../Navbar/Navbar'
-import Products from '../Products/Products'
+//import Products from '../Products/Products'
 import Banner from '../Carousel/Banner'
 import { auth, db } from '../../firebaseconfig/firebaseConfig'
 import { collection, getDocs, query, where } from 'firebase/firestore'

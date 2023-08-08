@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import {collection, query, onSnapshot, getDocs} from "firebase/firestore";
+import {collection, getDocs} from "firebase/firestore";
 import { db } from '../../firebaseconfig/firebaseConfig';
 import SliderProductCard from '../SliderProductCard/SliderProductCard';
 

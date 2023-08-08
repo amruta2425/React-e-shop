@@ -1,6 +1,6 @@
-import React, { useState, useEffect }from 'react'
-import { db, auth } from '../../firebaseconfig/firebaseConfig'
-import { collection, query, where, getDocs, updateDoc, deleteDoc } from 'firebase/firestore';
+import React, { useState}from 'react'
+import { db} from '../../firebaseconfig/firebaseConfig'
+import { updateDoc, deleteDoc } from 'firebase/firestore';
 import styles from './CartCard.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';

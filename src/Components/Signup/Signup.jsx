@@ -1,4 +1,4 @@
-import React ,{useEffect ,useState}from 'react'
+import React ,{useState}from 'react'
 import Navbar from '../Navbar/Navbar'
 import styles from './Signup.module.scss';
 import { Link } from 'react-router-dom'

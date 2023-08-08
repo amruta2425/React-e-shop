@@ -1,5 +1,5 @@
 import React,{useState ,useEffect}from 'react'
-import { Link, Navigate, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import styles from './Navbar.module.css'
 import cartlogo from '../../assets/cartlogo.png'
 import profilelogo from '../../assets/profilelogo.png'

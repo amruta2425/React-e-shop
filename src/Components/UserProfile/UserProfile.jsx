@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import Navbar from '../Navbar/Navbar'
 import { auth, db } from '../../firebaseconfig/firebaseConfig'
 import { collection, getDocs, query, where } from 'firebase/firestore'
-import { updateProfile } from 'firebase/auth'
+//import { updateProfile } from 'firebase/auth'
 import styles from './UserProfile.module.scss';
 
 

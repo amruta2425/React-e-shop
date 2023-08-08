@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import Navbar from '../../Components/Navbar/Navbar';
 import ProductContainer from '../ProductContainer/ProductContainer'
-import { collection ,getDocs ,query,onSnapshot } from 'firebase/firestore'
+import { collection ,getDocs} from 'firebase/firestore'
 import { db } from '../../firebaseconfig/firebaseConfig'
 import styles from './AllProducts.module.scss'
 
