@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from'./SliderProductcard.module.scss'
+import styles from'./SliderProductCard.module.scss'
 
 
 const Sliderproductcard = (product) => {
